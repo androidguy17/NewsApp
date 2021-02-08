@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@android:color/white"
+    android:visibility="gone"
+    >
+
+    <ImageView
+        android:id="@+id/no_internet"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/no_internet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:id="@+id/t"
+        android:layout_height="wrap_content"
+        android:text="   Oh Crap! :("
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_below="@id/no_internet"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="check your connection and try again"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+
+        android:layout_below="@id/t"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Reload"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/msg"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="reload"/>
+
+</RelativeLayout>
